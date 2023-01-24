@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".SecondFragment">
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="450dp"
+        android:src="@drawable/weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:text="Temperature:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/precipTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="95dp"
+        android:text="Precipitation:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:text="Wind Speed:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempTitleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="256dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintStart_toEndOf="@+id/tempTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/precipTitleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="256dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/precipTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windTitleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="256dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/windTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_head"
+        android:background="#F5C5FB"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <View
+        android:id="@+id/view_body"
+        android:background="#F5C5FB"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_head" />
+
+    <View
+        android:id="@+id/view_leg"
+        android:background="#F5C5FB"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_feet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_body"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <View
+        android:id="@+id/view_feet"
+        android:background="#F5C5FB"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_head"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/view_head"
+        app:layout_constraintEnd_toEndOf="@+id/view_head" />
+
+    <TextView
+        android:id="@+id/textView_body"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/view_body"
+        app:layout_constraintEnd_toEndOf="@+id/view_body" />
+
+    <TextView
+        android:id="@+id/textView_leg"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/view_leg"
+        app:layout_constraintEnd_toEndOf="@+id/view_leg" />
+
+    <TextView
+        android:id="@+id/textView_feet"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/view_feet"
+        app:layout_constraintEnd_toEndOf="@+id/view_feet" />
+
+    <ImageView
+        android:id="@+id/imageView_leg"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:src="@drawable/jeans"
+        app:layout_constraintBottom_toBottomOf="@+id/view_leg"
+        app:layout_constraintEnd_toEndOf="@+id/view_leg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_leg" />
+
+    <ImageView
+        android:id="@+id/imageView_feet"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:src="@drawable/sneakers"
+        app:layout_constraintEnd_toEndOf="@+id/view_feet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_feet"
+        app:layout_constraintTop_toTopOf="@+id/view_feet" />
+
+    <ImageView
+        android:id="@+id/imageView_body"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:src="@drawable/shirt"
+        app:layout_constraintBottom_toBottomOf="@+id/view_body"
+        app:layout_constraintEnd_toEndOf="@+id/view_body"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_body" />
+
+    <ImageView
+        android:id="@+id/imageView_head"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:src="@drawable/toque"
+        app:layout_constraintBottom_toBottomOf="@+id/view_head"
+        app:layout_constraintEnd_toEndOf="@+id/view_head"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_head" />
+
+
+    <ImageView
+        android:id="@+id/imageView_hotter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/warm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_colder"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/snowflake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
